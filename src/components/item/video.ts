@@ -15,7 +15,6 @@ export class VideoComponent extends BaseComponent<HTMLElement>{
     const titleElement = this.element.querySelector('.video__title')! as HTMLHeadingElement;
     titleElement.textContent = title;
 
-    console.log(src)
     const iframe = this.element.querySelector('.video__iframe')! as HTMLIFrameElement;
     iframe.src = this.covertToEmbededURL(src); // url => videoId로 변환해야 한다.
     }
